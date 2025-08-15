@@ -97,6 +97,9 @@ app.use((req,res,next)=>{
 //         res.send(newUser);
 // })
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 
 app.use("/listings",listingRoute);
